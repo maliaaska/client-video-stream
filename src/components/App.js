@@ -16,10 +16,10 @@ const App = () => {
           <Header />
           <Switch>
             <Route path="/" exact component={StreamList} />
-            <Route path="/streams/new" component={StreamCreate} />
-            <Route path="/streams/edit/:id" component={StreamEdit} />
-            <Route path="/streams/:id" component={StreamShow} />
-            <Route path="/streams/delete/:id" component={StreamDelete} />
+            <Route path="/streams/new" exact component={StreamCreate} />
+            <Route path="/streams/edit/:id" exact component={StreamEdit} />
+            <Route path="/streams/:id" exact component={StreamShow} />
+            <Route path="/streams/delete/:id" exact component={StreamDelete} />
           </Switch>
         </div>
       </Router>
